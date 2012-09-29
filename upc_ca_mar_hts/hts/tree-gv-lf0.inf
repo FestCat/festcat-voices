@@ -1,0 +1,7 @@
+QS Num-Phrases_in_Utterance==1 { "*-1" }
+
+{*}[2]
+{
+   0 Num-Phrases_in_Utterance==1                         "gv_lf0_2"       "gv_lf0_1" 
+}
+

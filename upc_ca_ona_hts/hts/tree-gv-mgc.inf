@@ -1,0 +1,17 @@
+QS Num-Syls_in_Utterance<=3 { "*/J:1+*","*/J:2+*","*/J:3+*" }
+QS Num-Syls_in_Utterance<=6 { "*/J:1+*","*/J:2+*","*/J:3+*","*/J:4+*","*/J:5+*","*/J:6+*" }
+QS Num-Syls_in_Utterance<=12 { "*/J:?+*","*/J:10+*","*/J:11+*","*/J:12+*" }
+QS Num-Syls_in_Utterance<=18 { "*/J:?+*","*/J:10+*","*/J:11+*","*/J:12+*","*/J:13+*","*/J:14+*","*/J:15+*","*/J:16+*","*/J:17+*","*/J:18+*" }
+QS Num-Syls_in_Utterance<=28 { "*/J:?+*","*/J:1?+*","*/J:20+*","*/J:21+*","*/J:22+*","*/J:23+*","*/J:24+*","*/J:25+*","*/J:26+*","*/J:27+*","*/J:28+*" }
+QS Num-Phrases_in_Utterance==3 { "*-3" }
+
+{*}[2]
+{
+   0 Num-Syls_in_Utterance<=18                          -2         -1    
+  -1 Num-Syls_in_Utterance<=6                           -3         -4    
+  -2 Num-Syls_in_Utterance<=28                           "gv_mgc_2"       "gv_mgc_1" 
+  -3 Num-Syls_in_Utterance<=12                           "gv_mgc_3"      -5    
+  -4 Num-Syls_in_Utterance<=3                            "gv_mgc_5"       "gv_mgc_4" 
+  -5 Num-Phrases_in_Utterance==3                         "gv_mgc_7"       "gv_mgc_6" 
+}
+

@@ -1,0 +1,27 @@
+QS Num-Syls_in_Utterance<=4 { "*/J:1+*","*/J:2+*","*/J:3+*","*/J:4+*" }
+QS Num-Syls_in_Utterance<=6 { "*/J:1+*","*/J:2+*","*/J:3+*","*/J:4+*","*/J:5+*","*/J:6+*" }
+QS Num-Syls_in_Utterance<=9 { "*/J:?+*" }
+QS Num-Syls_in_Utterance<=11 { "*/J:?+*","*/J:10+*","*/J:11+*" }
+QS Num-Syls_in_Utterance<=18 { "*/J:?+*","*/J:10+*","*/J:11+*","*/J:12+*","*/J:13+*","*/J:14+*","*/J:15+*","*/J:16+*","*/J:17+*","*/J:18+*" }
+QS Num-Syls_in_Utterance<=26 { "*/J:?+*","*/J:1?+*","*/J:20+*","*/J:21+*","*/J:22+*","*/J:23+*","*/J:24+*","*/J:25+*","*/J:26+*" }
+QS Num-Words_in_Utterance==1 { "*+1-*" }
+QS Num-Words_in_Utterance==12 { "*+12-*" }
+QS Num-Phrases_in_Utterance==1 { "*-1" }
+QS Num-Phrases_in_Utterance<=2 { "*-1","*-2" }
+
+{*}[2]
+{
+   0 Num-Syls_in_Utterance<=18                          -3         -1    
+  -1 Num-Syls_in_Utterance<=6                           -2         -7    
+  -2 Num-Syls_in_Utterance<=9                           -4          "gv_lf0_1" 
+  -3 Num-Syls_in_Utterance<=26                          -9         -6    
+  -4 Num-Words_in_Utterance==12                         -5          "gv_lf0_2" 
+  -5 Num-Phrases_in_Utterance<=2                         "gv_lf0_3"      -8    
+  -6 Num-Phrases_in_Utterance==1                       -11          "gv_lf0_4" 
+  -7 Num-Syls_in_Utterance<=4                            "gv_lf0_5"     -10    
+  -8 Num-Syls_in_Utterance<=11                           "gv_lf0_7"       "gv_lf0_6" 
+  -9 Num-Phrases_in_Utterance==1                         "gv_lf0_9"       "gv_lf0_8" 
+ -10 Num-Words_in_Utterance==1                          "gv_lf0_11"      "gv_lf0_10" 
+ -11 Num-Phrases_in_Utterance<=2                        "gv_lf0_13"      "gv_lf0_12" 
+}
+
