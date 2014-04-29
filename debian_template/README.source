@@ -1,0 +1,53 @@
+This package provides a trained voice model for speech synthesis.
+
+Training the model took between 2 or 3 weeks of computer processing 
+(on a 2012 computer), and up to 5GB of RAM at some points.
+
+In order to train the model, the original data and some programs are 
+required.
+
+The original data consists on:
+  * Recordings
+  * Phonetic segmentation of the recordings
+
+This data is licensed under a Creative Commons Acknowledgment Share Alike
+license and can be downloaded from 
+[here](http://festcat.talp.cat/download/data)
+
+
+## Required tools
+
+A not fully (but almost) automated training system can be downloaded from:
+https://github.com/FestCat/festcat-voice-builder
+
+Among all the dependencies, there is a required tool with a non-free 
+license. However the resulting model can be distributed and used freely.
+
+The required tools to train the models are:
+ * General utilities:
+   - C, C++ compilers
+   - make
+   - grep, awk, sed
+   - sox
+   - perl
+   - Tcl/Tk with Snack [Snack](http://www.speech.kth.se/snack/) 
+     (just install libsnack2-dev)
+
+ * Specific language-processing tools:
+   1. [Speech Tools 2.1-release](http://festvox.org/packed/festival/2.1/)
+   2. [Festival 2.1-release](http://festvox.org/packed/festival/2.1/)
+   3. [SPTK 3.4.1](http://sourceforge.net/projects/sp-tk)
+   4. [HTS-2.2](http://hts.sp.nitech.ac.jp/) for 
+      [HTK-3.4.1](http://htk.eng.cam.ac.uk/)
+      (downloading HTK requires a 
+      [user and password](http://htk.eng.cam.ac.uk/register.shtml),
+      as well as agreeing to the 
+      [non-free license](http://htk.eng.cam.ac.uk/docs/license.shtml))
+   5. [HDecode 3.4.1](http://htk.eng.cam.ac.uk/) 
+      (it has similar restrictions to HTK)
+   6. [hts_engine 1.0.5](http://sourceforge.net/projects/hts-engine)
+
+ * Specific Catalan package:
+   - upc_ca_base (http://festcat.talp.cat, or the "festival-ca" package)
+
+
