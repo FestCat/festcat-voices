@@ -64,7 +64,6 @@
 
 ;;;  Add the directory that contains catalan stuff (normalization, tagger, etc.) to load-path
 (set! catalan-path (path-append (if (boundp 'datadir) datadir libdir) "upc_catalan/"))
-
 (if (not (member_string catalan-path load-path))
                       (set! load-path (cons catalan-path load-path)))
 
