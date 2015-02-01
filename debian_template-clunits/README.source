@@ -1,0 +1,18 @@
+This package provides a trained voice model for speech synthesis
+based on concatenation.
+
+The original data consists on:
+  * Recordings
+  * Phonetic segmentation of the recordings
+
+This data is licensed under a Creative Commons Acknowledgment Share Alike
+license and can be downloaded from 
+[here](http://festcat.talp.cat/download/data)
+
+
+## Required tools
+
+A not fully (but almost) automated training system can be downloaded from:
+https://github.com/FestCat/festcat-clunits-builder
+
+

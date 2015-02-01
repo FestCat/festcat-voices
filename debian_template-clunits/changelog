@@ -1,0 +1,5 @@
+festvox-ca-@SPK@-clunits (@VERSION@) @RELEASE@; urgency=medium
+
+  * New upstream version @VERSION@
+
+ -- Sergio Oller <sergioller@gmail.com>  @DATE@

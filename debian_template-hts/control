@@ -1,0 +1,19 @@
+Source: festvox-ca-@SPK@-hts
+Section: sound
+Priority: optional
+Maintainer: Sergio Oller <sergioller@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://festcat.talp.cat/
+
+Package: festvox-ca-@SPK@-hts
+Architecture: all
+Depends: festival-ca (>=2.1.5), ${misc:Depends}
+Provides: festival-catalan-voice
+Description: Catalan speaker for festival, 16kHz HTS
+ This is a Catalan HTS voice for festival that uses 
+ 16kHz samples. Using festival, this package allows one to transform 
+ written text to speech spoken with a high quality voice.
+ .
+ This voice was generated at Universitat Politècnica de Catalunya.
+
