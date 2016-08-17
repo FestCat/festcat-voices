@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-VTYPE="clunits"
+VTYPE="hts"
 
 
 for SPK in "bet" "eli" "eva" "jan" "mar" "ona" "pau" "pep" "pol" "teo" "uri"; do
