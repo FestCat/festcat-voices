@@ -46,6 +46,8 @@ The required tools to train the models are:
    5. [HDecode 3.4.1](http://htk.eng.cam.ac.uk/) 
       (it has similar restrictions to HTK)
    6. [hts_engine 1.0.5](http://sourceforge.net/projects/hts-engine)
+   7. HTSmulti2single.py script from
+      https://github.com/peterdrysdale/bellbird_extras/
 
  * Specific Catalan package:
    - upc_ca_base (http://festcat.talp.cat, or the "festival-ca" package)

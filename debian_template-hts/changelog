@@ -1,5 +1,21 @@
 festvox-ca-@SPK@-hts (@VERSION@) @RELEASE@; urgency=medium
 
-  * New upstream version @VERSION@
+  * New upstream version
+  * Update Debian Policy to 3.9.8
 
  -- Sergio Oller <sergioller@gmail.com>  @DATE@
+
+festvox-ca-@SPK@-hts (1.2-1) unstable; urgency=medium
+
+  * New upstream version.
+    - Fix bugs with saying-some-words-split-like-this.
+  * Updated d/copyright after discussion on debian-legal
+
+ -- Sergio Oller <sergioller@gmail.com>  Sun, 04 May 2014 02:26:28 +0200
+
+festvox-ca-@SPK@-hts (1.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #639701)
+
+ -- Sergio Oller <sergioller@gmail.com>  Sun, 19 Feb 2012 16:16:00 +0100
+

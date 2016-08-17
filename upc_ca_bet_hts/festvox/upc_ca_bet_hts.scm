@@ -111,39 +111,16 @@ Reset global variables back to previous voice."
 
 (set! upc_ca_bet_hts::hts_engine_params
       (list
-       (list "-md" (path-append hts_data_dir "dur.pdf"))
-       (list "-mm" (path-append hts_data_dir "mgc.pdf"))
-       (list "-mf" (path-append hts_data_dir "lf0.pdf"))
-
-       (list "-td" (path-append hts_data_dir "tree-dur.inf"))
-       (list "-tm" (path-append hts_data_dir "tree-mgc.inf"))
-       (list "-tf" (path-append hts_data_dir "tree-lf0.inf"))
-
-       (list "-dm1" (path-append hts_data_dir "mgc.win1"))
-       (list "-dm2" (path-append hts_data_dir "mgc.win2"))
-       (list "-dm3" (path-append hts_data_dir "mgc.win3"))
-       (list "-df1" (path-append hts_data_dir "lf0.win1"))
-       (list "-df2" (path-append hts_data_dir "lf0.win2"))
-       (list "-df3" (path-append hts_data_dir "lf0.win3"))
-       (list "-cm" (path-append hts_data_dir "gv-mgc.pdf"))
-       (list "-cf" (path-append hts_data_dir "gv-lf0.pdf"))
-       (list "-em"  (path-append hts_data_dir "tree-gv-mgc.inf"))
-       (list "-ef"  (path-append hts_data_dir "tree-gv-lf0.inf"))
-
-       (list "-k"  (path-append hts_data_dir "gv-switch.inf"))
-       '("-s"    16000.0)
-       '("-p"    80.0)
-       '("-a"    0.420000)
-       '("-g"    0.0)
-       '("-b"    0.0)
-       '("-u"    0.5)
-       ))
+       (list "-m" (path-append hts_data_dir "upc_ca_bet.htsvoice"))
+       )
+)
 
 (define (voice_upc_ca_bet_hts)
   "(voice_upc_ca_bet_hts)
 Define voice for catalan."
   ;; *always* required
   (voice_reset)
+
   (Param.set 'Language 'catalan)
 
   ;; Select appropriate phone set
@@ -184,8 +161,10 @@ Define voice for catalan."
  '((language catalan)
    (gender female)
    (dialect central)
+   (coding ISO-8859-15)
    (description
     "Catalan speaker bet from the Festcat project.")))
 
 (provide 'upc_ca_bet_hts)
+
 
